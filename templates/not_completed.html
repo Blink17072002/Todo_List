@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <title>UnCompleted Todo Items</title>
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+</head>
+
+<body>
+    <div class="container2">
+        <h1>Uncompleted Todo Items</h1>
+        <ul>
+            {% for todo_item in not_completed_items %}
+            <li>
+                <h3>{{ todo_item.title }}</h3>
+                <p>{{ todo_item.description }}</p>
+                <p>Created at: {{ todo_item.created }}</p>
+            </li>
+            {% empty %}
+            <li>No uncompleted todo items.</li>
+            {% endfor %}
+        </ul>
+        
+        <div class="go-back">
+            <a href="{% url 'Todo' %}">Go back to all items</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

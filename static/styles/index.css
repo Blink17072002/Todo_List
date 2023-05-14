@@ -1,0 +1,122 @@
+body{
+    background-color:darkgrey;
+    margin: 0;
+}
+
+
+/* Add this CSS code to the existing styles */
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    width: 100vw;
+    position: relative;
+    clear: both;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.navbar a.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.enter {
+    color: white;
+    text-align: center;
+}
+
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Add this CSS code to the existing styles */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin: 3%;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form label {
+    margin-bottom: 5px;
+}
+
+.form input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.form button[type="submit"] {
+    padding: 10px 20px;
+}
+
+.form2{
+    margin: 3%;
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    width: 100vw;
+    position: relative;
+    clear: both;
+}
+
+.footer .right-content {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.footer .right-content .footer_a,
+.footer .right-content .footer_b {
+    padding: 5px 10px;
+    background-color: #555;
+}
+
+.footer .right-content .footer_a a,
+.footer .right-content .footer_b a {
+    color: white;
+    text-decoration: none;
+}
+
+.go-back a{
+    color: white;
+    text-decoration: none;
+}
