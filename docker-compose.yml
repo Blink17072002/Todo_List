@@ -15,7 +15,7 @@ services:
     environment:
       POSTGRES_DB: Todo
       POSTGRES_USER: Blink
-      POSTGRES_PASSWORD: #Blink2002
+      POSTGRES_PASSWORD: "#Blink2002"
     volumes:
       - postgres_data:/var/lib/postgresql/data/
 
