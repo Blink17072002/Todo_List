@@ -9,6 +9,8 @@ services:
       - "8000:8000"
     depends_on:
       - postgres
+    networks:
+      - todo_list_default
 
   postgres:
     image: postgres:latest
@@ -18,6 +20,12 @@ services:
       POSTGRES_PASSWORD: "#Blink2002"
     volumes:
       - postgres_data:/var/lib/postgresql/data/
+    networks:
+      - todo_list_default
 
 volumes:
   postgres_data:
+
+networks:
+  todo_list_default:
+    external: true
