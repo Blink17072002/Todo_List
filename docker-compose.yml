@@ -3,14 +3,17 @@ services:
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - .:/code
     ports:
       - "8000:8000"
     depends_on:
       - postgres
     networks:
       - todo_list_default
+    environment:
+      - DB_NAME=Todo
+      - DB_USER=Blink
+      - DB_PASSWORD=#Blink2002
+      - DB_HOST=postgres
 
   postgres:
     image: postgres:latest
