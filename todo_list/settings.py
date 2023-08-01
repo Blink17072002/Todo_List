@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 
 DATABASES = {
     'default': {
-       'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME', 'Todo'),
-        'USER': os.environ.get('DB_USER', 'Blink'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', '#Blink2002'),
-        'HOST': os.environ.get('DB_HOST', 'postgres'),
-        'PORT': os.environ.get('DB_PORT', '5432'), 
+       'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mytodo',
+        'USER': 'root',
+        'PASSWORD': '#Blink2002',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
 

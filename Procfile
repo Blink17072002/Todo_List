@@ -1,1 +1,1 @@
-web: python manage.py migrate && python manage.py collectstatic && gunicorn todo_list.wsgi --log-file -
+web: gunicorn todolist.wsgi
